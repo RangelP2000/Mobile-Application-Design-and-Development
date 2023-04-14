@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunter</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+<body>
+    <ion-list>
+        <ion-item>
+          <ion-select aria-label="offers" placeholder="Select a Degree">
+            <ion-select-option value="engineering">Engineering</ion-select-option>
+            <ion-select-option value="pharmacy">Pharmacy</ion-select-option>
+            <ion-select-option value="graphicDesign">Graphic Design</ion-select-option>
+            <ion-select-option value="law">Law</ion-select-option>
+            <ion-select-option value="biomedicalScience">Biomedical Science</ion-select-option>
+            <ion-select-option value="computerScience">Computer Science</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-button id = "btn-view" expand="block">View Job Offers</ion-button>
+
+      <ion-card class = "eng">
+        <ion-card-header>
+            <ion-card-title>Service Engineer</ion-card-title>
+            <ion-card-subtitle>Scot Industrial Air, Aberdeen</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>This is a fantastic opportunity to utilise and develop your engineering skills in a varied and interesting role.</ion-card-content>
+        <ion-button>Apply</ion-button>
+      </ion-card>
+
+      <ion-card class = "eng">
+        <ion-card-header>
+            <ion-card-title>Project Engineer</ion-card-title>
+            <ion-card-subtitle>Sparrows Group, Aberdeen</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>We are looking for a Project Engineer to join our team at Sparrows in Aberdeen.</ion-card-content>
+        <ion-button>Apply</ion-button>
+      </ion-card>
+
+      <ion-card class = "eng">
+        <ion-card-header>
+            <ion-card-title>Electrical Engineer</ion-card-title>
+            <ion-card-subtitle>TIS MANIFACTURING LTD, Aberdeen</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>Electrician / Electrical Engineer: candidate to have served an approved apprenticeship with knowledge of PLC functionality, ATEX and IECEx standards.</ion-card-content>
+        <ion-button>Apply</ion-button>
+      </ion-card>
+    <script src="app.js"></script></script>
+</body>
+</html>
