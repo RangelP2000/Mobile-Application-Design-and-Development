@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <title>Carbon Footprint Calculator</title>
+</head>
+<body>
+    <ion-header>
+        <ion-toolbar color="success">
+          <ion-title>
+            Carbon Footprint Calculator
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>Transportation</ion-label>
+            <ion-select id="transportMode">
+              <ion-select-option value="car">Car</ion-select-option>
+              <ion-select-option value="bike">Bike</ion-select-option>
+              <ion-select-option value="public_transit">Public Transit</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Energy Consumption (kWh)</ion-label>
+            <ion-input type="number" id="energyConsumption"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Diet (kg CO2e/week)</ion-label>
+            <ion-input type="number" id="dietCarbonEmission"></ion-input>
+          </ion-item>
+        </ion-list>
+      
+        <ion-button expand="full" id="calculateButton" color="success">Calculate</ion-button>
+      
+        <ion-card id="carbonFootprintResultCard" style="display: none;">
+          <ion-card-header>
+            Carbon Footprint Result
+          </ion-card-header>
+          <ion-card-content>
+            Your estimated carbon footprint is <span id="carbonFootprintResult">0</span> kg CO2e/year.
+          </ion-card-content>
+        </ion-card>
+        <ion-button expand="full" id="clearButton" color="success">Clear Result</ion-button>
+        <ion-button expand="full" id="getTips">Get Tips to Reduce Carbon Emission</ion-button>
+        <ion-button expand="full" id="getNews">See the latest Carbon Emission News</ion-button>
+      </ion-content>
+    <script src="carbon.calc.js"></script>
+</body>
+</html>
